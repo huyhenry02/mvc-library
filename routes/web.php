@@ -24,7 +24,16 @@ Route::get('/', function () {
 });
 
 Route::group([
-    'prefix' => 'book'
+    'prefix' => 'auth'
+], function () {
+    Route::get('/login', [UserController::class, 'indexLogin'])->name('login.index');
+    Route::post('/', [UserController::class, 'postLogin'])->name('login.post');
+    Route::get('/logout', [UserController::class, 'postLogout'])->name('logout');
+});
+
+Route::group([
+    'prefix' => 'book',
+    'middleware' => 'auth'
 ], function () {
     Route::get('/', [BookController::class, 'index'])->name('book.index');
     Route::get('/create', [BookController::class, 'create'])->name('book.create');
@@ -36,43 +45,47 @@ Route::group([
 });
 
 Route::group([
-    'prefix' => 'category'
+    'prefix' => 'category',
+    'middleware' => 'auth'
 ], function () {
     Route::get('/', [CategoryController::class, 'index'])->name('category.index');
     Route::get('/create', [CategoryController::class, 'create'])->name('category.create');
     Route::post('/', [CategoryController::class, 'store'])->name('category.store');
     Route::get('/{category}', [CategoryController::class, 'show'])->name('category.show');
-    Route::get('/{category}/edit', [CategoryController::class, 'edit'])->name('category.edit');
-    Route::put('/{category}', [CategoryController::class, 'update'])->name('category.update');
-    Route::delete('/{category}', [CategoryController::class, 'destroy'])->name('category.destroy');
+    Route::get('/edit/{category}', [CategoryController::class, 'edit'])->name('category.edit');
+    Route::post('/update/{category}', [CategoryController::class, 'update'])->name('category.update');
+    Route::get('/delete/{category}', [CategoryController::class, 'destroy'])->name('category.destroy');
 });
 
 Route::group([
-    'prefix' => 'user'
+    'prefix' => 'user',
+    'middleware' => 'auth'
 ], function () {
     Route::get('/', [UserController::class, 'index'])->name('user.index');
     Route::get('/create', [UserController::class, 'create'])->name('user.create');
     Route::post('/', [UserController::class, 'store'])->name('user.store');
     Route::get('/{user}', [UserController::class, 'show'])->name('user.show');
-    Route::get('/{user}/edit', [UserController::class, 'edit'])->name('user.edit');
-    Route::put('/{user}', [UserController::class, 'update'])->name('user.update');
-    Route::delete('/{user}', [UserController::class, 'destroy'])->name('user.destroy');
+    Route::get('/edit/{user}', [UserController::class, 'edit'])->name('user.edit');
+    Route::post('/update/{user}', [UserController::class, 'update'])->name('user.update');
+    Route::get('/delete/{user}', [UserController::class, 'destroy'])->name('user.destroy');
 });
 
 Route::group([
-    'prefix' => 'author'
+    'prefix' => 'author',
+    'middleware' => 'auth'
 ], function () {
     Route::get('/', [AuthorController::class, 'index'])->name('author.index');
     Route::get('/create', [AuthorController::class, 'create'])->name('author.create');
     Route::post('/', [AuthorController::class, 'store'])->name('author.store');
     Route::get('/{author}', [AuthorController::class, 'show'])->name('author.show');
-    Route::get('/{author}/edit', [AuthorController::class, 'edit'])->name('author.edit');
-    Route::put('/{author}', [AuthorController::class, 'update'])->name('author.update');
-    Route::delete('/{author}', [AuthorController::class, 'destroy'])->name('author.destroy');
+    Route::get('/edit/{author}', [AuthorController::class, 'edit'])->name('author.edit');
+    Route::post('/update/{author}', [AuthorController::class, 'update'])->name('author.update');
+    Route::get('/delete/{author}', [AuthorController::class, 'destroy'])->name('author.destroy');
 });
 
 Route::group([
-    'prefix' => 'borrowing-form'
+    'prefix' => 'borrowing-form',
+    'middleware' => 'auth'
 ], function () {
     Route::get('/', [BookBorrowingFormController::class, 'index'])->name('borrowing-form.index');
     Route::get('/create', [BookBorrowingFormController::class, 'create'])->name('borrowing-form.create');
@@ -83,7 +96,8 @@ Route::group([
     Route::delete('/{borrowingForm}', [BookBorrowingFormController::class, 'destroy'])->name('borrowing-form.destroy');
 });
 Route::group([
-    'prefix' => 'purchase-form'
+    'prefix' => 'purchase-form',
+    'middleware' => 'auth'
 ], function () {
     Route::get('/', [BookPurchaseFormController::class, 'index'])->name('purchase-form.index');
     Route::get('/create', [BookPurchaseFormController::class, 'create'])->name('purchase-form.create');

@@ -4,10 +4,10 @@
         <div class="container-fluid p-0">
             <div class="row d-flex">
                 <div class="col-11">
-                    <h1 class="h3"> Danh sách</h1>
+                    <h1 class="h3"> Danh sách <strong>Thể loại sách</strong></h1>
                 </div>
                 <div class="col-1">
-                    <a class="btn btn-primary" style="margin-bottom: 5px" href="">Thêm mới</a>
+                    <a class="btn btn-primary" style="margin-bottom: 5px" href="{{route('category.create')}}">Thêm mới</a>
                 </div>
             </div>
             <div class="row">
@@ -16,24 +16,24 @@
                         <table class="table table-hover my-0">
                             <thead>
                             <tr>
-                                <th>Name</th>
-                                <th class="d-none d-xl-table-cell">Start Date</th>
-                                <th class="d-none d-xl-table-cell">End Date</th>
-                                <th>Status</th>
-                                <th class="d-none d-md-table-cell">Assignee</th>
+                                <th>STT</th>
+                                <th class="d-none d-xl-table-cell">Tên</th>
+                                <th class="d-none d-xl-table-cell">Mô tả</th>
+                                <th class="d-none d-md-table-cell">Hành động</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>Project Apollo</td>
-                                <td class="d-none d-xl-table-cell">01/01/2021</td>
-                                <td class="d-none d-xl-table-cell">31/06/2021</td>
-                                <td><span class="badge bg-success">Done</span></td>
-                                <td class="d-none d-md-table-cell">
-                                    <a href="" class="btn btn-secondary">Sửa</a>
-                                    <a href="" class="btn btn-danger">Xóa</a>
-                                </td>
-                            </tr>
+                           @foreach($categories as $category)
+                               <tr>
+                                   <td>{{$category->id ?? ''}}</td>
+                                   <td class="d-none d-xl-table-cell">{{$category->name ?? ''}}</td>
+                                   <td class="d-none d-xl-table-cell">{{$category->description ?? ''}}</td>
+                                   <td class="d-none d-md-table-cell">
+                                       <a href="{{route('category.edit', $category->id)}}" class="btn btn-secondary">Sửa</a>
+                                       <a href="{{route('category.destroy', $category->id)}}" class="btn btn-danger">Xóa</a>
+                                   </td>
+                               </tr>
+                           @endforeach
                             </tbody>
                         </table>
                     </div>

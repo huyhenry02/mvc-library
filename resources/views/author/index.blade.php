@@ -16,24 +16,32 @@
                         <table class="table table-hover my-0">
                             <thead>
                             <tr>
-                                <th>Name</th>
-                                <th class="d-none d-xl-table-cell">Start Date</th>
-                                <th class="d-none d-xl-table-cell">End Date</th>
-                                <th>Status</th>
-                                <th class="d-none d-md-table-cell">Assignee</th>
+                                <th>STT</th>
+                                <th>Tên</th>
+                                <th class="d-none d-xl-table-cell">Địa chỉ</th>
+                                <th class="d-none d-xl-table-cell">Số điện thoại</th>
+                                <th class="d-none d-xl-table-cell">Email</th>
+                                <th class="d-none d-md-table-cell">Tuổi</th>
+                                <th class="d-none d-md-table-cell">Nơi làm việc</th>
+                                <th class="d-none d-md-table-cell">Hành động</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>Project Apollo</td>
-                                <td class="d-none d-xl-table-cell">01/01/2021</td>
-                                <td class="d-none d-xl-table-cell">31/06/2021</td>
-                                <td><span class="badge bg-success">Done</span></td>
-                                <td class="d-none d-md-table-cell">
-                                    <a href="" class="btn btn-secondary">Sửa</a>
-                                    <a href="" class="btn btn-danger">Xóa</a>
-                                </td>
-                            </tr>
+                            @foreach($authors as $author)
+                                <tr>
+                                    <td>{{$author->id ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$author->name ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$author->address ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$author->phone ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$author->email ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$author->age ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$author->workplace ?? ''}}</td>
+                                    <td class="d-none d-md-table-cell">
+                                        <a href="{{route('author.edit', $author->id)}}" class="btn btn-secondary">Sửa</a>
+                                        <a href="{{route('author.destroy', $author->id)}}" class="btn btn-danger">Xóa</a>
+                                    </td>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

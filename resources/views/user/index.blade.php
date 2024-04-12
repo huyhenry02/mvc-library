@@ -1,13 +1,14 @@
+@php use App\Models\User; @endphp
 @extends('layouts.main')
 @section('content')
     <main class="content" style="margin-top: -65px; margin-left: -40px">
         <div class="container-fluid p-0">
             <div class="row d-flex">
                 <div class="col-11">
-                    <h1 class="h3"> Danh sách</h1>
+                    <h1 class="h3"> Danh sách <strong>Nhân viên</strong></h1>
                 </div>
                 <div class="col-1">
-                    <a class="btn btn-primary" style="margin-bottom: 5px" href="">Thêm mới</a>
+                    <a class="btn btn-primary" style="margin-bottom: 5px" href="{{route('user.create')}}">Thêm mới</a>
                 </div>
             </div>
             <div class="row">
@@ -16,24 +17,33 @@
                         <table class="table table-hover my-0">
                             <thead>
                             <tr>
-                                <th>Name</th>
-                                <th class="d-none d-xl-table-cell">Start Date</th>
-                                <th class="d-none d-xl-table-cell">End Date</th>
-                                <th>Status</th>
-                                <th class="d-none d-md-table-cell">Assignee</th>
+                                <th>STT</th>
+                                <th>Tên</th>
+                                <th class="d-none d-xl-table-cell">Chức vụ</th>
+                                <th class="d-none d-xl-table-cell">Địa chỉ</th>
+                                <th class="d-none d-xl-table-cell">Số điện thoại</th>
+                                <th class="d-none d-md-table-cell">Tuổi</th>
+                                <th class="d-none d-md-table-cell">Email</th>
+                                <th class="d-none d-md-table-cell">Hành động</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>Project Apollo</td>
-                                <td class="d-none d-xl-table-cell">01/01/2021</td>
-                                <td class="d-none d-xl-table-cell">31/06/2021</td>
-                                <td><span class="badge bg-success">Done</span></td>
-                                <td class="d-none d-md-table-cell">
-                                    <a href="" class="btn btn-secondary">Sửa</a>
-                                    <a href="" class="btn btn-danger">Xóa</a>
-                                </td>
-                            </tr>
+                            @foreach($users as $user)
+                                <tr>
+                                    <td>{{$user->id ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$user->name ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$user->role_type ? User::ROLE_TYPES[$user->role_type] : ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$user->address ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$user->phone ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$user->age ?? ''}}</td>
+                                    <td class="d-none d-xl-table-cell">{{$user->email ?? ''}}</td>
+
+                                    <td class="d-none d-md-table-cell">
+                                        <a href="{{route('user.edit', $user->id)}}" class="btn btn-secondary">Sửa</a>
+                                        <a href="{{route('user.destroy', $user->id)}}" class="btn btn-danger">Xóa</a>
+                                    </td>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
