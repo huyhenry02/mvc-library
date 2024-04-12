@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Admin User",
+        "role_type": "admin",
+        "address": "123 Admin Street",
+        "phone": "123456789",
+        "email": "admin@example.com",
+        "password": "$2y$10$abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij",
+        "age": 30
+    },
+    {
+        "name": "Employee User",
+        "role_type": "employee",
+        "address": "456 Employee Street",
+        "phone": "987654321",
+        "email": "employee@example.com",
+        "password": "$2y$10$ijklmnopqrstijklmnopqrstijklmnopqrstijklmnopqrstijklmnopqrstu",
+        "age": 25
+    },
+    {
+        "name": "Customer User",
+        "role_type": "customer",
+        "address": "789 Customer Street",
+        "phone": "567890123",
+        "email": "customer@example.com",
+        "password": "$2y$10$vwxyzabcdefvwxyzabcdefvwxyzabcdefvwxyzabcdefvwxyzabcdef",
+        "age": 35
+    }
+]

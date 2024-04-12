@@ -1,0 +1,38 @@
+[
+    {
+        "create_user_id": 1,
+        "customer_name": "Nguyễn Văn A",
+        "customer_phone": "0123456789",
+        "customer_email": "nguyenvana@example.com",
+        "customer_address": "123 Đường ABC, Quận XYZ, Thành phố HCM",
+        "usage_period_from": "2024-04-15",
+        "usage_period_to": "2024-04-20",
+        "deposit": 50000,
+        "total_price": 0,
+        "status": "pending"
+    },
+    {
+        "create_user_id": 2,
+        "customer_name": "Trần Thị B",
+        "customer_phone": "0987654321",
+        "customer_email": "tranthib@example.com",
+        "customer_address": "456 Đường XYZ, Quận ABC, Thành phố HCM",
+        "usage_period_from": "2024-04-18",
+        "usage_period_to": "2024-04-25",
+        "deposit": 60000,
+        "total_price": 0,
+        "status": "approved"
+    },
+    {
+        "create_user_id": 3,
+        "customer_name": "Lê Văn C",
+        "customer_phone": "0567890123",
+        "customer_email": "levanc@example.com",
+        "customer_address": "789 Đường XYZ, Quận ABC, Thành phố HCM",
+        "usage_period_from": "2024-04-20",
+        "usage_period_to": "2024-04-28",
+        "deposit": 70000,
+        "total_price": 0,
+        "status": "rejected"
+    }
+]

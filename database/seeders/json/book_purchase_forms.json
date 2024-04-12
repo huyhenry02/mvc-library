@@ -1,0 +1,26 @@
+[
+    {
+        "create_user_id": 1,
+        "customer_name": "Nguyễn Văn A",
+        "customer_phone": "0123456789",
+        "customer_email": "nguyenvana@example.com",
+        "customer_address": "123 Đường ABC, Quận XYZ, Thành phố HCM",
+        "total_price": 135000
+    },
+    {
+        "create_user_id": 2,
+        "customer_name": "Trần Thị B",
+        "customer_phone": "0987654321",
+        "customer_email": "tranthib@example.com",
+        "customer_address": "456 Đường XYZ, Quận ABC, Thành phố HCM",
+        "total_price": 95000
+    },
+    {
+        "create_user_id": 3,
+        "customer_name": "Lê Văn C",
+        "customer_phone": "0567890123",
+        "customer_email": "levanc@example.com",
+        "customer_address": "789 Đường XYZ, Quận ABC, Thành phố HCM",
+        "total_price": 187500
+    }
+]

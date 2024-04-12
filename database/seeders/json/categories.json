@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Khoa học",
+        "description": "Sách về các lĩnh vực khoa học tự nhiên và xã hội"
+    },
+    {
+        "name": "Văn học",
+        "description": "Sách văn học, tiểu thuyết, truyện ngắn..."
+    },
+    {
+        "name": "Kinh doanh",
+        "description": "Sách liên quan đến kinh doanh, quản lý, marketing..."
+    },
+    {
+        "name": "Lịch sử",
+        "description": "Sách về lịch sử các quốc gia, sự kiện lịch sử..."
+    },
+    {
+        "name": "Tâm lý học",
+        "description": "Sách về tâm lý học, phát triển cá nhân..."
+    },
+    {
+        "name": "Nghệ thuật",
+        "description": "Sách về nghệ thuật, âm nhạc, hội họa..."
+    },
+    {
+        "name": "Du lịch",
+        "description": "Sách về du lịch, khám phá địa điểm, văn hóa..."
+    },
+    {
+        "name": "Sức khỏe",
+        "description": "Sách về sức khỏe, dinh dưỡng, thể dục..."
+    },
+    {
+        "name": "Thiếu nhi",
+        "description": "Sách dành cho trẻ em, sách học tập, giáo trình..."
+    },
+    {
+        "name": "Tôn giáo",
+        "description": "Sách về tôn giáo, triết học, đạo đức..."
+    }
+]

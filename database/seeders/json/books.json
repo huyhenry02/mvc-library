@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Cuộc Đời Của Pi",
+        "description": "Cuốn sách kể về cuộc phiêu lưu đầy gian nan của chàng trai trẻ Pi trên biển cả với con hổ tên Richard Parker.",
+        "category_id": 1,
+        "author_id": 1,
+        "amount": 10,
+        "rental_price": 35000,
+        "purchase_price": 159900
+    },
+    {
+        "name": "Harry Potter và Hòn Đá Phù Thủy",
+        "description": "Cuốn đầu tiên trong loạt sách nổi tiếng về cậu bé phù thủy Harry Potter và cuộc hành trình ở trường phù thủy Hogwarts.",
+        "category_id": 2,
+        "author_id": 9,
+        "amount": 8,
+        "rental_price": 40000,
+        "purchase_price": 185000
+    },
+    {
+        "name": "Sapiens: Lược Sử Loài Người",
+        "description": "Cuốn sách đưa ra cái nhìn tổng quan về lịch sử phát triển của loài người từ thời tiền sử đến hiện đại.",
+        "category_id": 3,
+        "author_id": 6,
+        "amount": 12,
+        "rental_price": 50000,
+        "purchase_price": 209900
+    },
+    {
+        "name": "Dấu Chân Trên Cát",
+        "description": "Cuốn sách tuyệt vời về cuộc đời và sự nghiệp của Nelson Mandela.",
+        "category_id": 4,
+        "author_id": 8,
+        "amount": 6,
+        "rental_price": 45000,
+        "purchase_price": 229900
+    },
+    {
+        "name": "7 Thói Quen Của Người Hiệu Quả",
+        "description": "Cuốn sách giúp bạn phát triển các thói quen tích cực để đạt được thành công trong cuộc sống và công việc.",
+        "category_id": 5,
+        "author_id": 4,
+        "amount": 15,
+        "rental_price": 30000,
+        "purchase_price": 179900
+    },
+    {
+        "name": "The Art of War",
+        "description": "A classic book on military strategy written by Sun Tzu.",
+        "category_id": 6,
+        "author_id": 2,
+        "amount": 20,
+        "rental_price": 28000,
+        "purchase_price": 149900
+    },
+    {
+        "name": "To Kill a Mockingbird",
+        "description": "A novel by Harper Lee which explores issues of racism and moral growth through the eyes of a young girl.",
+        "category_id": 7,
+        "author_id": 7,
+        "amount": 18,
+        "rental_price": 40000,
+        "purchase_price": 199900
+    },
+    {
+        "name": "Pride and Prejudice",
+        "description": "A classic novel by Jane Austen that follows the life of Elizabeth Bennet as she navigates issues of marriage and class in early 19th century England.",
+        "category_id": 8,
+        "author_id": 5,
+        "amount": 22,
+        "rental_price": 35000,
+        "purchase_price": 169900
+    },
+    {
+        "name": "1984",
+        "description": "A dystopian novel by George Orwell which explores themes of totalitarianism, surveillance, and propaganda.",
+        "category_id": 9,
+        "author_id": 3,
+        "amount": 10,
+        "rental_price": 38000,
+        "purchase_price": 215000
+    },
+    {
+        "name": "The Da Vinci Code",
+        "description": "A mystery thriller novel by Dan Brown that follows symbologist Robert Langdon as he investigates a murder in the Louvre Museum.",
+        "category_id": 10,
+        "author_id": 10,
+        "amount": 25,
+        "rental_price": 38000,
+        "purchase_price": 189900
+    }
+]

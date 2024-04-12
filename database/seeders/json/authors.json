@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Nguyễn Văn A",
+        "address": "123 Đường Tác Giả",
+        "phone": "0123456789",
+        "email": "nguyenvana@example.com",
+        "age": 40,
+        "workplace": "Nhà Xuất Bản A"
+    },
+    {
+        "name": "Trần Thị B",
+        "address": "456 Đường Tác Giả",
+        "phone": "0987654321",
+        "email": "tranthib@example.com",
+        "age": 35,
+        "workplace": "Nhà Xuất Bản B"
+    },
+    {
+        "name": "Lê Văn C",
+        "address": "789 Đường Tác Giả",
+        "phone": "0567890123",
+        "email": "levanc@example.com",
+        "age": 45,
+        "workplace": "Nhà Xuất Bản C"
+    },
+    {
+        "name": "Phạm Thị D",
+        "address": "101 Đường Tác Giả",
+        "phone": "0901234567",
+        "email": "phamthid@example.com",
+        "age": 38,
+        "workplace": "Nhà Xuất Bản D"
+    },
+    {
+        "name": "Hoàng Văn E",
+        "address": "202 Đường Tác Giả",
+        "phone": "0789012345",
+        "email": "hoangvane@example.com",
+        "age": 42,
+        "workplace": "Nhà Xuất Bản E"
+    },
+    {
+        "name": "Nguyễn Thị F",
+        "address": "303 Đường Tác Giả",
+        "phone": "0912345678",
+        "email": "nguyenthif@example.com",
+        "age": 37,
+        "workplace": "Nhà Xuất Bản F"
+    },
+    {
+        "name": "Trần Văn G",
+        "address": "404 Đường Tác Giả",
+        "phone": "0567890123",
+        "email": "tranvang@example.com",
+        "age": 50,
+        "workplace": "Nhà Xuất Bản G"
+    },
+    {
+        "name": "Lê Thị H",
+        "address": "505 Đường Tác Giả",
+        "phone": "0123456789",
+        "email": "lethih@example.com",
+        "age": 32,
+        "workplace": "Nhà Xuất Bản H"
+    },
+    {
+        "name": "Phạm Văn I",
+        "address": "606 Đường Tác Giả",
+        "phone": "0789012345",
+        "email": "phamvani@example.com",
+        "age": 47,
+        "workplace": "Nhà Xuất Bản I"
+    },
+    {
+        "name": "Hoàng Thị K",
+        "address": "707 Đường Tác Giả",
+        "phone": "0912345678",
+        "email": "hoangthik@example.com",
+        "age": 39,
+        "workplace": "Nhà Xuất Bản K"
+    }
+]

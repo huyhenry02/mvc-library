@@ -1,0 +1,26 @@
+[
+    {
+        "book_borrowing_form_id": 1,
+        "book_id": 1,
+        "amount": 2,
+        "price": 30000
+    },
+    {
+        "book_borrowing_form_id": 1,
+        "book_id": 2,
+        "amount": 1,
+        "price": 40000
+    },
+    {
+        "book_borrowing_form_id": 2,
+        "book_id": 3,
+        "amount": 3,
+        "price": 45000
+    },
+    {
+        "book_borrowing_form_id": 3,
+        "book_id": 4,
+        "amount": 2,
+        "price": 35000
+    }
+]
