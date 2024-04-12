@@ -9,32 +9,32 @@
                 Pages
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="">
+                <a class="sidebar-link" href="{{route('user.index')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Nhân viên</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="">
+                <a class="sidebar-link" href="{{route('author.index')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Tác giả</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="">
+                <a class="sidebar-link" href="{{route('category.index')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Thể loại sách</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="">
+                <a class="sidebar-link" href="{{route('book.index')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Sách</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="">
+                <a class="sidebar-link" href="{{route('borrowing-form.index')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Phiếu mượn sách</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="">
+                <a class="sidebar-link" href="{{route('purchase-form.index')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Phiếu mua sách</span>
                 </a>
             </li>

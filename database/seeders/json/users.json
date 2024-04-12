@@ -5,25 +5,25 @@
         "address": "123 Admin Street",
         "phone": "123456789",
         "email": "admin@example.com",
-        "password": "$2y$10$abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij",
+        "password": "Password@123",
         "age": 30
     },
     {
-        "name": "Employee User",
+        "name": "Employee User 1",
         "role_type": "employee",
-        "address": "456 Employee Street",
+        "address": "456 Employee 1 Street",
         "phone": "987654321",
-        "email": "employee@example.com",
-        "password": "$2y$10$ijklmnopqrstijklmnopqrstijklmnopqrstijklmnopqrstijklmnopqrstu",
+        "email": "employee_1@example.com",
+        "password": "Password@123",
         "age": 25
     },
     {
-        "name": "Customer User",
-        "role_type": "customer",
-        "address": "789 Customer Street",
-        "phone": "567890123",
-        "email": "customer@example.com",
-        "password": "$2y$10$vwxyzabcdefvwxyzabcdefvwxyzabcdefvwxyzabcdefvwxyzabcdef",
-        "age": 35
+        "name": "Employee User 2",
+        "role_type": "employee",
+        "address": "456 Employee 2 Street",
+        "phone": "987654322",
+        "email": "employee_2@example.com",
+        "password": "Password@123",
+        "age": 25
     }
 ]
