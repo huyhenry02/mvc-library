@@ -39,9 +39,9 @@ Route::group([
     Route::get('/create', [BookController::class, 'create'])->name('book.create');
     Route::post('/', [BookController::class, 'store'])->name('book.store');
     Route::get('/{book}', [BookController::class, 'show'])->name('book.show');
-    Route::get('/{book}/edit', [BookController::class, 'edit'])->name('book.edit');
-    Route::put('/{book}', [BookController::class, 'update'])->name('book.update');
-    Route::delete('/{book}', [BookController::class, 'destroy'])->name('book.destroy');
+    Route::get('/edit/{book}', [BookController::class, 'edit'])->name('book.edit');
+    Route::post('/update/{book}', [BookController::class, 'update'])->name('book.update');
+    Route::get('/delete/{book}', [BookController::class, 'destroy'])->name('book.destroy');
 });
 
 Route::group([
