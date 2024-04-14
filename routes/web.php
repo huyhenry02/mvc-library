@@ -39,6 +39,7 @@ Route::group([
     Route::get('/create', [BookController::class, 'create'])->name('book.create');
     Route::post('/', [BookController::class, 'store'])->name('book.store');
     Route::get('/{book}', [BookController::class, 'show'])->name('book.show');
+    Route::get('/get-rental-price/{book}', [BookController::class, 'getRentalPrice'])->name('book.get-rental-price');
     Route::get('/edit/{book}', [BookController::class, 'edit'])->name('book.edit');
     Route::post('/update/{book}', [BookController::class, 'update'])->name('book.update');
     Route::get('/delete/{book}', [BookController::class, 'destroy'])->name('book.destroy');
@@ -91,9 +92,9 @@ Route::group([
     Route::get('/create', [BookBorrowingFormController::class, 'create'])->name('borrowing-form.create');
     Route::post('/', [BookBorrowingFormController::class, 'store'])->name('borrowing-form.store');
     Route::get('/{borrowingForm}', [BookBorrowingFormController::class, 'show'])->name('borrowing-form.show');
-    Route::get('/{borrowingForm}/edit', [BookBorrowingFormController::class, 'edit'])->name('borrowing-form.edit');
-    Route::put('/{borrowingForm}', [BookBorrowingFormController::class, 'update'])->name('borrowing-form.update');
-    Route::delete('/{borrowingForm}', [BookBorrowingFormController::class, 'destroy'])->name('borrowing-form.destroy');
+    Route::get('/edit/{borrowingForm}', [BookBorrowingFormController::class, 'edit'])->name('borrowing-form.edit');
+    Route::post('/update/{borrowingForm}', [BookBorrowingFormController::class, 'update'])->name('borrowing-form.update');
+    Route::get('/delete/{borrowingForm}', [BookBorrowingFormController::class, 'destroy'])->name('borrowing-form.destroy');
 });
 Route::group([
     'prefix' => 'purchase-form',
@@ -103,9 +104,9 @@ Route::group([
     Route::get('/create', [BookPurchaseFormController::class, 'create'])->name('purchase-form.create');
     Route::post('/', [BookPurchaseFormController::class, 'store'])->name('purchase-form.store');
     Route::get('/{purchaseForm}', [BookPurchaseFormController::class, 'show'])->name('purchase-form.show');
-    Route::get('/{purchaseForm}/edit', [BookPurchaseFormController::class, 'edit'])->name('purchase-form.edit');
-    Route::put('/{purchaseForm}', [BookPurchaseFormController::class, 'update'])->name('purchase-form.update');
-    Route::delete('/{purchaseForm}', [BookPurchaseFormController::class, 'destroy'])->name('purchase-form.destroy');
+    Route::get('/edit/{purchaseForm}', [BookPurchaseFormController::class, 'edit'])->name('purchase-form.edit');
+    Route::post('/update/{purchaseForm}', [BookPurchaseFormController::class, 'update'])->name('purchase-form.update');
+    Route::get('/delete/{purchaseForm}', [BookPurchaseFormController::class, 'destroy'])->name('purchase-form.destroy');
 });
 
 

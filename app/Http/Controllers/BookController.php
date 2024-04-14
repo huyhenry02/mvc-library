@@ -10,6 +10,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -52,9 +53,18 @@ class BookController extends Controller
 
     public function show(Book $book): View|Application|Factory|\Illuminate\Contracts\Foundation\Application
     {
-        return view('book.show', [
+        $categories = Category::all();
+        $authors = Author::all();
+        return view('book.edit', [
             'book' => $book,
+            'categories' => $categories,
+            'authors' => $authors,
         ]);
+    }
+
+    public function getRentalPrice(Book $book): JsonResponse
+    {
+        return response()->json($book->rental_price);
     }
 
     public function edit(Book $book): View|Application|Factory|\Illuminate\Contracts\Foundation\Application

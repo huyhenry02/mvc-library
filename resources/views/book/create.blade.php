@@ -4,7 +4,7 @@
         <div class="container-fluid p-0">
 
             <div class="mb-3">
-                <h1 class="h3 d-inline align-middle">Tạo mới</h1>
+                <h1 class="h3 d-inline align-middle">Tạo mới <strong>Sách</strong></h1>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-12">

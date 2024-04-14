@@ -12,6 +12,17 @@ class BookBorrowingForm extends Model
     use HasFactory;
     protected $table = 'book_borrowing_forms';
 
+    public const STATUS_PENDING = "pending";
+    public const STATUS_APPROVED = "approved";
+    public const STATUS_REJECTED = "rejected";
+    public const STATUS_COMPLETED = "completed";
+    public const STATUS_TYPES = [
+        self::STATUS_PENDING => "Chờ duyệt",
+        self::STATUS_APPROVED => "Đã duyệt",
+        self::STATUS_REJECTED => "Từ chối",
+        self::STATUS_COMPLETED => "Hoàn thành",
+    ];
+
     /**
      * The attributes that are mass assignable.
      *

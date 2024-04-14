@@ -5,7 +5,7 @@
         <div class="container-fluid p-0">
 
             <div class="mb-3">
-                <h1 class="h3 d-inline align-middle">Chỉnh sửa</h1>
+                <h1 class="h3 d-inline align-middle">Chỉnh sửa <strong>Nhân viên</strong></h1>
             </div>
 
 

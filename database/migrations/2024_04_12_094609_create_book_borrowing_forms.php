@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('customer_address')->nullable();
             $table->date('usage_period_from')->nullable();
             $table->date('usage_period_to')->nullable();
-            $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
+            $table->enum('status', ['pending', 'approved', 'rejected', 'completed'])->default('pending');
             $table->unsignedBigInteger('deposit')->nullable();
             $table->unsignedBigInteger('total_price')->nullable();
             $table->timestamps();
