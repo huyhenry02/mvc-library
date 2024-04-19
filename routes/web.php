@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect()->route('book.index');
+    return redirect()->route('user.index');
 });
 
 Route::group([
@@ -62,6 +62,7 @@ Route::group([
     'prefix' => 'user',
     'middleware' => 'auth'
 ], function () {
+//    /user
     Route::get('/', [UserController::class, 'index'])->name('user.index');
     Route::get('/create', [UserController::class, 'create'])->name('user.create');
     Route::post('/', [UserController::class, 'store'])->name('user.store');
