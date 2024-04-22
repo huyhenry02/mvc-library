@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="input-data" style="margin-bottom: 15px">
                                     <label for="input" style="margin-bottom: 5px">Email:</label>
-                                    <input type="text" name="email" class="form-control" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" placeholder="Email">
                                 </div>
                                 <div class="input-data" style="margin-bottom: 15px">
                                     <label for="input" style="margin-bottom: 5px">Tuổi:</label>
